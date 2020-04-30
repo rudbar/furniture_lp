@@ -1,3 +1,13 @@
+$(document).ready(function() {
+
+    $(".toggle-mnu").click(function() {
+        $(this).toggleClass("on");
+        $(".main-mnu").slideToggle();
+        return false;
+    });
+    
+});
+
 $(window).load(function() {
     $(".before-after").twentytwenty({
         before_label: 'До нас', // Set a custom before label
