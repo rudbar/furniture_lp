@@ -578,11 +578,13 @@ ul.home-list li {
   color: #777;
 }
 
-.home-gallery-wrap > a {
+.home-gallery-wrap > a,
+.certificate-wrap > a {
   display: none;
 }
 
-.home-gallery-wrap > a:first-child {
+.home-gallery-wrap > a:first-child,
+.certificate-wrap > a:first-child {
   display: block;
 }
 

@@ -9,6 +9,17 @@ $(document).ready(function() {
         gallery: {
             enabled: true
         }
+    });
+    
+    $(".mfp-certificate").magnificPopup({
+		type: 'image',
+		closeOnContentClick: true,
+		image: {
+            verticalFit: false
+        },
+        gallery: {
+            enabled: true
+        }
 	});
 
     $(".mouse-icon").click(function() {
@@ -24,6 +35,7 @@ $(document).ready(function() {
     });
     
 });
+
 
 $(window).load(function() {
     $(".before-after").twentytwenty({
