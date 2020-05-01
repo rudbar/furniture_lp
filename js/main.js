@@ -1,5 +1,11 @@
 $(document).ready(function() {
 
+    $(".mouse-icon").click(function() {
+        $("html, body").animate({
+            scrollTop : $(".s-adv").offset().top
+        }, 600);
+    });
+
     $(".toggle-mnu").click(function() {
         $(this).toggleClass("on");
         $(".main-mnu").slideToggle();

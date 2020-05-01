@@ -67,18 +67,22 @@ nav,
 
 .header-content
     padding: 10% 0 5%
-    ul
-        margin-top: 40px
-        li
-            display: block
-            color: #414e5b
-            text-transform: uppercase
-            font-size: 17px
-            line-height: 1.8
     .button
         margin-top: 50px
 
-
+ul.home-list
+    margin-top: 42px
+    text-align: left
+    list-style-type: none
+    padding: 0
+    margin: 0
+    li
+        display: block
+        color: #414e5b
+        text-transform: uppercase
+        font-size: 17px
+        line-height: 1.8
+        
 
 .button
     display: inline-block
@@ -92,6 +96,7 @@ nav,
     border-radius: 3px
     box-shadow: 0 4px 0 #0E9C4B
     transition: all .15s ease
+    text-align: center
     &:hover, &:focus
         color: #fff
         text-decoration: none
@@ -100,6 +105,17 @@ nav,
     &:active
         background-color: #0E9C4B
         transform: translateY(2px)
+
+.button-accent
+    background-color: transparent
+    border: $accent 1px solid
+    box-shadow: 0px 4px 0px darken($accent, 6%)
+    color: $accent
+    +bold
+    &:hover
+        background-color: $accent
+    &:active, &:focus
+        background-color: darken($accent, 6%)
 
 .top-img-wrap
     .responsive-img
@@ -228,3 +244,36 @@ nav,
                     color: #fff
                     background-color: $accent
                     text-decoration: none
+
+.s-wide
+    padding: 80px 0
+
+.s-dark
+    background-color: $blue
+    color: #fff
+
+.s-adv
+    padding: 55px 0 10px
+.s-adv-item
+    font-size: 15px
+    color: #c0cdda
+    line-height: 21px
+    margin-bottom: 40px
+    h3
+        margin: 0
+        font-size: 20px
+        color: #dde9f3
+        span
+            font-size: 34px
+            color: $accent
+    p
+        margin: 12px 0 0 
+
+.table
+    display: table
+    width: 100%
+    .tr
+        display: table-row
+    .td
+        display: table-cell
+        vertical-align: middle
