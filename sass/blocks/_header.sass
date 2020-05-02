@@ -106,6 +106,23 @@ ul.home-list
         background-color: #0E9C4B
         transform: translateY(2px)
 
+.button-small
+    padding: 9px 28px
+    font-size: 13px
+    background-color: $accent
+    box-shadow: 0px 4px 0px darken($accent, 6%)
+    &:hover
+        background-color: lighten($accent, 8%)
+        box-shadow: 0px 4px 0px darken($accent, 3%)
+    &:active, &:focus
+        background-color: darken($accent, 6%)
+        box-shadow: 0px 4px 0px darken($accent, 6%)
+
+.button-gray
+    background: #E8E8E8
+    color: #666
+    box-shadow: 0px 4px 0px darken(#E8E8E8, 6%)
+
 .button-accent
     background-color: transparent
     border: $accent 1px solid
@@ -247,6 +264,10 @@ ul.home-list
 
 .s-wide
     padding: 80px 0
+    h2
+        text-align: center
+        margin-top: 0
+        line-height: 35px
 
 .s-dark
     background-color: $blue
