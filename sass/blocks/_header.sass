@@ -136,6 +136,7 @@ ul.home-list
 
 .top-img-wrap
     .responsive-img
+        min-width: 100%
         margin-top: -40px
         margin-left: 120px
 
@@ -293,8 +294,9 @@ ul.home-list
 .table
     display: table
     width: 100%
-    .tr
-        display: table-row
-    .td
-        display: table-cell
-        vertical-align: middle
+    table-layout: fixed
+.tr
+    display: table-row
+.td
+    display: table-cell
+    vertical-align: middle

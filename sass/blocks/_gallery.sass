@@ -52,7 +52,7 @@
         display: block
 
 .item-vertical
-    svg
+    svg, img
         width: 74px
         height: auto
     path
@@ -97,7 +97,104 @@
 
     margin-top: 80px
     text-align: center
-    path
+
+.s-works
+    padding-bottom: 0
+    border-bottom: 20px solid #35414E
+    h2
+        margin-bottom: 64px
+    
+.portfolio
+    .col-md-4,
+    .col-md-3,
+    .col-md-2,
+    .col-md-5
+        padding: 0
+    .portfolio-item
+        position: relative
+        display: block
+        color: #414e5b
+        overflow: hidden
+        img
+            +mt(.5s)
+        &:hover
+            .portfolio-item-content
+                opacity: 1
+                transform: scale(.95)
+            img
+                transform: scale(1.1)
+        &-content
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            padding-top: 25%
+            background-color: rgba(255,255,255,.85)
+            text-align: center
+            opacity: 0
+            +mt(.5s)
+            transform: scale(1.1)
+            i
+                color: rgba(65, 78, 91, .6)
+                font-size: 24px
+
+.portfolio-popup
+    position: relative
+    background-color: #fff
+    display: block
+    max-width: 1000px
+    margin: 5% auto
+    text-align: center
+    padding-top: 15px
+    +mt(.25s)
+    .responsive-img
+    .row, .col-sm-12
+        display: block
+    h2
+        line-height: 21px
+        width: 70%
+        margin: 30px auto
+    &-text
+        text-align: left
+    .td
+        vertical-align: top
+        padding: 0 7px
+        color: #666
+        &.wsnw
+            color: $accent
+        i
+            font-size: 22px
+            margin-right: 3px
+
+.portfolio-popup-text
+    display: block
+    width: 90%
+    margin: 20px auto 40px
+
+.wsnw
+    white-space: nowrap
+
+
+//.my-mfp-zoom-in Animation
+.my-mfp-zoom-in
+    .portfolio-popup
+        opacity: 0
+        transform: scale(0.8)
+    &.mfp-ready .portfolio-popup
+        opacity: 1
+        transform: scale(1)
+    &.mfp-removing .portfolio-popup
+        transform: scale(0.8)
+        opacity: 0
+    &.mfp-bg
+        opacity: 0
+        transition: opacity 0.3s ease-out
+    &.mfp-ready.mfp-bg
+        opacity: 0.8
+    &.mfp-removing.mfp-bg
+        opacity: 0
+            
         
     
         
