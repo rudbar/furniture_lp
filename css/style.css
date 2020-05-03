@@ -150,6 +150,10 @@ img {
   max-width: 100%;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .main-head {
   background: url(../img/header/bg_top.jpg);
   background: cover;
@@ -947,6 +951,11 @@ ul.home-list li {
 
 .carousel-eq .owl-dots .owl-dot.active {
   background-color: #ECB124;
+}
+
+.tizer-text {
+  font-size: 19px;
+  margin-bottom: 50px;
 }
 
 @font-face {
