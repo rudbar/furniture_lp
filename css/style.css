@@ -958,6 +958,64 @@ ul.home-list li {
   margin-bottom: 50px;
 }
 
+.item-vertical-2 {
+  margin-top: 55px;
+  text-align: center;
+}
+
+.item-vertical-2:hover .rounded-img-wrap {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}
+
+.item-vertical-2:hover .iv-phone {
+  color: #ECB124;
+}
+
+.item-vertical-2 h3 {
+  font-size: 17px;
+  color: #444;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.item-vertical-2 p {
+  font-size: 13px;
+  color: #666;
+  letter-spacing: 2px;
+  margin-top: 0;
+}
+
+.iv-phone {
+  margin-top: 22px;
+  color: #999;
+  font-family: 'Proxima Nova Semibold', sans-serif;
+  font-size: 17px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.iv-phone i {
+  font-size: 19px;
+  margin-right: 3px;
+}
+
+.rounded-img-wrap {
+  border-radius: 10em;
+  border: #ECB124 6px solid;
+  overflow: hidden;
+  width: 125px;
+  height: 125px;
+  text-align: center;
+  margin: auto;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.rounded-img-wrap img {
+  max-width: 100%;
+}
+
 @font-face {
   font-family: 'FontAwesome';
   src: url("../fonts/fontawesome/fontawesome-webfont.eot?v=4.4.0");
