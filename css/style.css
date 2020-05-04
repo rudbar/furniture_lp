@@ -1016,6 +1016,39 @@ ul.home-list li {
   max-width: 100%;
 }
 
+.s-brands {
+  padding: 60px 0;
+}
+
+.s-brands h2 {
+  margin-bottom: 60px;
+}
+
+.carousel-brands {
+  padding: 0 80px;
+}
+
+.carousel-brands .carousel-brand {
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  opacity: .4;
+}
+
+.carousel-brands .carousel-brand:hover {
+  opacity: .8;
+}
+
+.carousel-brands .carousel-brand a {
+  display: block;
+  text-align: center;
+}
+
+.carousel-brands .carousel-brand a img {
+  max-width: 70%;
+  max-height: 40px;
+  display: inline-block;
+}
+
 @font-face {
   font-family: 'FontAwesome';
   src: url("../fonts/fontawesome/fontawesome-webfont.eot?v=4.4.0");
