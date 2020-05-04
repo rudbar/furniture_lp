@@ -78,6 +78,15 @@
 }
 
 @media only screen and (max-width: 480px) {
+  .carousel-brands {
+    padding: 0 40px;
+  }
+  .carousel-brands .owl-controls .owl-nav > div {
+    left: 15px;
+  }
+  .carousel-brands .owl-controls .owl-nav > div.owl-next {
+    right: 15px;
+  }
   .header-content {
     text-align: center;
   }
@@ -1026,16 +1035,49 @@ ul.home-list li {
 
 .carousel-brands {
   padding: 0 80px;
+  position: relative;
+}
+
+.carousel-brands .owl-controls {
+  left: 0;
+  top: 0;
+  width: 100%;
+  position: absolute;
+}
+
+.carousel-brands .owl-controls .owl-nav {
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+
+.carousel-brands .owl-controls .owl-nav > div {
+  position: absolute;
+  left: 25px;
+  font-size: 34px;
+  line-height: 38px;
+  color: #9c9c9c;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.carousel-brands .owl-controls .owl-nav > div:hover {
+  color: #ECB124;
+}
+
+.carousel-brands .owl-controls .owl-nav > div.owl-next {
+  right: 25px;
+  left: auto;
 }
 
 .carousel-brands .carousel-brand {
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
-  opacity: .4;
+  opacity: .5;
 }
 
 .carousel-brands .carousel-brand:hover {
-  opacity: .8;
+  opacity: .9;
 }
 
 .carousel-brands .carousel-brand a {
