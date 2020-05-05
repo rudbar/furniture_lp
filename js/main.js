@@ -51,8 +51,18 @@ $(document).ready(function() {
 		}
 	});
 
-	$(".s-direct .item-vertical p").equalHeights();
-	$(".carousel-text").equalHeights();
+	function heightses() {
+		$(".s-direct .item-vertical p").height('auto').equalHeights();
+		$(".carousel-text").height('auto').equalHeights();
+		$(".testimonials-head").height('auto').equalHeights();
+		$(".testimonials-desc").height('auto').equalHeights();
+	}
+
+	$(window).resize(function() {
+		heightses();
+	});
+
+	heightses();
 
 	$(".portfolio-item").each(function(e) {
 
@@ -161,4 +171,3 @@ $(document).ready(function() {
 $(window).load(function() {
     
 });
-

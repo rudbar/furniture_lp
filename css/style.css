@@ -28,6 +28,9 @@
   .col-md-6:last-child .button {
     margin-top: 20px;
   }
+  .testimonials-item .testimonials-desc {
+    padding: 15px;
+  }
 }
 
 @media only screen and (max-width: 899px) {
@@ -45,6 +48,9 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .testimonials-item {
+    margin-bottom: 60px;
+  }
   .mnu_line {
     text-align: center;
   }
@@ -1089,6 +1095,88 @@ ul.home-list li {
   max-width: 70%;
   max-height: 40px;
   display: inline-block;
+}
+
+.s-testimonials h2 {
+  margin-bottom: 60px;
+}
+
+.testimonials-item {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.testimonials-item:hover .rounded-img-wrap {
+  border-color: #ECB124;
+}
+
+.testimonials-item:hover .testimonials-head h4 {
+  color: #ECB124;
+}
+
+.testimonials-item:hover .testimonials-desc {
+  border-color: #ECB124;
+}
+
+.testimonials-item .rounded-img-wrap {
+  width: 98px;
+  height: 98px;
+  border: 5px #fff solid;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0 0 5px;
+          box-shadow: rgba(0, 0, 0, 0.15) 0 0 5px;
+}
+
+.testimonials-item .testimonials-head h4 {
+  font-size: 16px;
+  font-family: 'Proxima Nova Semibold', sans-serif;
+  margin-top: 35px;
+  margin-bottom: 12px;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.testimonials-item .testimonials-head h4 + p {
+  font-size: 15px;
+  letter-spacing: 2px;
+  margin-top: 0;
+  color: #666;
+}
+
+.testimonials-item .testimonials-desc {
+  background-color: #414E5B;
+  color: #fff;
+  padding: 30px;
+  margin-top: 50px;
+  border-radius: 2px;
+  position: relative;
+  border-bottom: #414E5B 5px solid;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.testimonials-item .testimonials-desc::before {
+  content: '';
+  position: absolute;
+  top: -16px;
+  -webkit-transform: translateX(-16px);
+          transform: translateX(-16px);
+  width: 0;
+  height: 0;
+  border-left: 16px solid transparent;
+  border-right: 16px solid transparent;
+  border-bottom: 16px solid #414E5B;
+}
+
+.testimonials-item .testimonials-desc h4 {
+  font-size: 19px;
+  text-transform: none;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.testimonials-item .testimonials-desc p {
+  color: #b5babf;
 }
 
 @font-face {

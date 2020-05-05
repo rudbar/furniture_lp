@@ -351,6 +351,64 @@
                 max-width: 70%
                 max-height: 40px
                 display: inline-block
+                
+.s-testimonials
+    h2
+            margin-bottom: 60px
+.testimonials-item
+    text-align: center
+    font-size: 14px
+    margin-top: 20px
+    &:hover
+        .rounded-img-wrap
+            border-color: $accent
+        .testimonials-head
+            h4
+                color: $accent
+        .testimonials-desc
+            border-color: $accent
+    .rounded-img-wrap
+        width: 98px
+        height: 98px
+        border: 5px #fff solid
+        box-shadow: rgba(0,0,0,.15) 0 0 5px
+    .testimonials-head
+        h4
+            font-size: 16px
+            +bold
+            margin-top: 35px
+            margin-bottom: 12px
+            transition: all .5s ease
+            + p
+                font-size: 15px
+                letter-spacing: 2px
+                margin-top: 0
+                color: #666
+    .testimonials-desc
+        background-color: $blue
+        color: #fff
+        padding: 30px
+        margin-top: 50px
+        border-radius: 2px
+        position: relative
+        border-bottom: $blue 5px solid
+        transition: all .5s ease
+        &::before
+            content: ''
+            position: absolute
+            top: -16px
+            transform: translateX(-16px)
+            @include triangle(32px, $blue, up)
+            
+        h4
+            font-size: 19px
+            text-transform: none
+            margin-top: 0
+            margin-bottom: 16px
+        p
+            color: #b5babf
+
+
 
 
     
