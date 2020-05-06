@@ -1337,6 +1337,22 @@ form label .selectize-dropdown .active {
   margin-top: -7px;
 }
 
+.main-foot {
+  background-color: #2c353d;
+}
+
+.main-foot .mnu_line {
+  padding: 40px 0;
+}
+
+.main-foot .main-mnu > ul > li.active a, .main-foot .main-mnu > ul > li:hover a, .main-foot .main-mnu > ul > li:focus a {
+  color: #d7dde2;
+}
+
+.main-foot .phone .phone-wrap {
+  color: #acb6be;
+}
+
 @font-face {
   font-family: 'FontAwesome';
   src: url("../fonts/fontawesome/fontawesome-webfont.eot?v=4.4.0");

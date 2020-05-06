@@ -137,7 +137,18 @@ $(document).ready(function() {
 
 	}, {
 		offset: '70%'
-    });
+	});
+	
+	$(".toggle-mnu").click(function() {
+		$(this).toggleClass("on");
+		$(this).parent().next().next().find(".main-mnu").slideToggle();
+		return false;
+	});
+
+	$(".main-foot .toggle-mnu").click(function() {
+		$("html, body").animate({scrollTop: $(document).height() + 200}, "slow");
+		return false;
+	});
     
     //Replace all SVG images with inline SVG
 	$('img.img-svg').each(function(){
