@@ -161,6 +161,15 @@ a {
   outline: none !important;
 }
 
+.hidden {
+  display: none;
+}
+
+b, strong {
+  font-family: 'Proxima Nova Semibold', sans-serif;
+  font-weight: normal;
+}
+
 img {
   max-width: 100%;
 }
@@ -568,6 +577,62 @@ ul.home-list li {
 .td {
   display: table-cell;
   vertical-align: middle;
+}
+
+.contact-form {
+  padding: 32px 26px;
+  background-color: #36414c;
+}
+
+.contact-form .button {
+  margin-top: 25px;
+}
+
+.contact-form-head {
+  text-align: center;
+}
+
+.contact-form-head h4 {
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.contact-form-head p {
+  color: #fff;
+  opacity: .6;
+  font-size: 14px;
+  margin-top: 0;
+}
+
+*::-webkit-input-placeholder {
+  color: #222;
+  opacity: 1;
+}
+
+*:-moz-placeholder {
+  color: #222;
+  opacity: 1;
+}
+
+*::-moz-placeholder {
+  color: #222;
+  opacity: 1;
+}
+
+*:-ms-input-placeholder {
+  color: #222;
+  opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+  color: #222;
+}
+
+body input:required:valid,
+body textarea:required:valid {
+  color: #222;
 }
 
 .s-gray {
@@ -1177,6 +1242,99 @@ ul.home-list li {
 
 .testimonials-item .testimonials-desc p {
   color: #b5babf;
+}
+
+.s-contacts-wrapper {
+  margin-top: 40px;
+}
+
+.s-contacts-wrapper .map {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.contacts-text {
+  font-size: 18px;
+  font-family: 'Proxima Nova Light', sans-serif;
+}
+
+.contacts-text p {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.contacts-text .fa {
+  color: #ECB124;
+  margin-right: 5px;
+  font-size: 24px;
+  width: 15px;
+  text-align: center;
+}
+
+form label {
+  margin-bottom: 14px;
+  display: block;
+}
+
+form label span {
+  font-size: 14px;
+  color: #fff;
+  opacity: .3;
+  display: block;
+  margin-bottom: 3px;
+}
+
+form label input, form label select, form label .selectize-input, form label .selectize-input.full {
+  background-color: #fff;
+  border-radius: 2px;
+  border: none;
+  padding: 9px 15px 7px;
+  display: block;
+  width: 100%;
+  color: #222;
+  font-size: 15px;
+  border-bottom: transparent 4px solid;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+form label input:focus, form label select:focus, form label .selectize-input:focus, form label .selectize-input.full:focus {
+  background-color: #fff;
+}
+
+form label .selectize-input, form label .selectize-input.full {
+  padding: 11px 15px;
+}
+
+form label .selectize-input:focus, form label .selectize-input.full:focus {
+  border-bottom: #566879 4px solid;
+}
+
+form label .selectize-dropdown {
+  border: none;
+}
+
+form label .selectize-dropdown .option {
+  padding: 8px 15px;
+}
+
+form label .selectize-dropdown .active {
+  background-color: #414E5B;
+  color: #fff;
+}
+
+.selectize-control.single .selectize-input::after {
+  position: absolute;
+  right: 26px;
+  margin-top: -7px;
+  content: '\f107';
+  border: none;
+  font-family: "fontAwesome";
+  font-size: 20px;
+}
+
+.selectize-control.single .selectize-input.dropdown-active::after {
+  margin-top: -7px;
 }
 
 @font-face {

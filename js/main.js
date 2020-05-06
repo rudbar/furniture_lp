@@ -1,5 +1,9 @@
 $(document).ready(function() {
 
+	$('form select').selectize({
+		
+	});
+
 	$(".carousel-brands").owlCarousel({
 		loop:true,
 		margin: 30,
@@ -164,9 +168,27 @@ $(document).ready(function() {
 			}, 'xml');
 
 	});
+
+	//E-mail Ajax Send
+	$("form").submit(function() { //Change
+		var th = $(this);
+		$.ajax({
+			type: "POST",
+			url: "/mail.php", //Change
+			data: th.serialize()
+		}).done(function() {
+			th.find(".success").addClass("active");
+			setTimeout(function() {
+				// Done Functions
+				th.find(".success").removeClass("active");
+				th.trigger("reset");
+				$.magnificPopup.close();
+			}, 3000);
+		});
+		return false;
+	});
     
 });
-
 
 $(window).load(function() {
     
