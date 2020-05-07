@@ -78,7 +78,7 @@ $(document).ready(function() {
 
 	});
 
-	$(".portfolio-item").magnificPopup({
+	$(".portfolio-item, a[href='#callback']").magnificPopup({
 		mainClass: 'my-mfp-zoom-in',
 		removalDelay: 300,
 		type: 'inline',

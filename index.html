@@ -31,7 +31,10 @@
                         <div class="phone-wrap">
                             <i class="fa fa-mobile"></i> +7 (365) 55-55-55
                         </div>
-                        <a href="#" class="callback">Заказать обратный звонок</a>
+                        <a href="#callback" class="callback" 
+                        data-form="Заказать обратный звонок: Верхняя"
+                        data-text="Заказать звонок"
+                        >Заказать обратный звонок</a>
                     </div>
 
                     <a href="" class="toggle-mnu hidden-lg"><span></span></a>
@@ -81,7 +84,10 @@
                         <li><i class="fa fa-check">Проекты любой сложности</i></li>
                     </ul>
 
-                    <a href="#" class="button">Отправить заявку</a>
+                    <a href="#callback" class="button"  
+                        data-form="Отправить заявку: Шапка"
+                        data-text="Отправить заявку"
+                    >Отправить заявку</a>
                     
 
                 </div>
@@ -188,7 +194,10 @@
                     </ul>
 
                     <div class="row">
-                        <div class="col-md-6"><a href="#" class="button">Сделать заказ</a></div>
+                        <div class="col-md-6"><a href="#callback" class="button"
+                            data-form="Сделать заказ: Первая секция"
+                            data-text="Сделать заказ"
+                            >Сделать заказ</a></div>
                         <div class="col-md-6">
                             <div class="certificate-wrap">
                                 <a href="img/certificate/certificate.jpg" class="button button-accent mfp-certificate"><span class="hidden-md">Наши </span>Cертификаты</a>
@@ -219,7 +228,10 @@
                         <img class="img-svg" src="img/services/1.svg" alt="Установка">
                         <h3>Установка</h3>
                         <p>Установка корпусной мебели является одним из направлений компании GLAM Group. Наша компания выполняет установку корпусной мебели любой сложности уже более 10 лет.</p>
-                        <a href="#" class="button button-small button-gray">Заказать<span class="hidden-sm"> установку</span></a>
+                        <a href="#callback" class="button button-small button-gray" 
+                        data-form="Заказать установку"
+                        data-text="Заказать установку"
+                        >Заказать<span class="hidden-sm"> установку</span></a>
                     </div>
 
                 </div>
@@ -229,7 +241,10 @@
                         <img class="img-svg" src="img/services/2.svg" alt="Установка">
                         <h3>Дизайн</h3>
                         <p>Основная задача наших специалистов это поиск оптимальных решений по взаимодействию и интеграции корпусной мебели в архитектуру помещения.</p>
-                        <a href="#" class="button button-small button-gray">Заказать<span class="hidden-sm"> дизайн</span></a>
+                        <a href="#callback" class="button button-small button-gray" 
+                        data-form="Заказать дизайн"
+                        data-text="Заказать дизайн"
+                        >Заказать<span class="hidden-sm"> дизайн</span></a>
                     </div>
 
                 </div>
@@ -239,7 +254,10 @@
                         <img class="img-svg" src="img/services/3.svg" alt="Установка">
                         <h3>Мебель</h3>
                         <p>Кроме того, мы реализуем сопутствующие аксессуары для корпусной мебели и интерьера в целом.</p>
-                        <a href="#" class="button button-small button-gray">Заказать<span class="hidden-sm"> аксессуары</span></a>
+                        <a href="#callback" class="button button-small button-gray" 
+                        data-form="Заказать мебель"
+                        data-text="Заказать мебель"
+                        >Заказать<span class="hidden-sm"> аксессуары</span></a>
                     </div>
 
                 </div>
@@ -777,7 +795,7 @@
 
                 <div class="col-sm-10 col-sm-offset-1">
                     <p class="tizer-text">Клиентам, обратившимся в нашу компанию до конца мая 2020 года, мы предоставляем <strong>скидку до 20%</strong>.</p>
-                    <a href="#" class="button">Отправить заявку</a>
+                    <a href="#callback" class="button" data-form="Скидки клиентам">Отправить заявку</a>
                 </div>
 
             </div>
@@ -1065,7 +1083,7 @@
                         <div class="phone-wrap">
                             <i class="fa fa-mobile"></i> +7 (365) 55-55-55
                         </div>
-                        <a href="#" class="callback">Заказать обратный звонок</a>
+                        <a href="#callback" class="callback" data-form="Заказать обратный звонок: Футер">Заказать обратный звонок</a>
                     </div>
 
                     <a href="" class="toggle-mnu hidden-lg"><span></span></a>
@@ -1108,7 +1126,32 @@
 
     </footer>
 
-    <div class="hidden"></div>
+    <div class="hidden">
+
+        <form id="callback" class="contact-form form-callback">
+
+                <div class="contact-form-head">
+                    <h4>Оставить заявку</h4>
+                    <p>Оставьте заявку и мы свяжемся с вами в течение 20 минут.</p>
+                </div>
+
+                <label>
+                    <span>Ваше имя:</span>
+                    <input type="text" name="Имя" placeholder="Ваше имя...">
+                </label>
+
+                <label>
+                    <span>Ваш телефон:</span>
+                    <input type="text" name="Имя" placeholder="Ваш телефон..." required>
+                </label>
+
+                <div class="text-center">
+                    <button class="button button-small">Отправить</button>
+                </div>
+
+        </form>
+
+    </div>
 
     <!-- Подключение виджета обратной связи через соцсети -->
     <script type="text/javascript" id="huy" src="https://spikmi.com/Widget?Id=3216"></script> 

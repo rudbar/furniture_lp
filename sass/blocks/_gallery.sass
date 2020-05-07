@@ -194,20 +194,32 @@ body textarea:required:valid
     display: block
     width: 90%
     margin: 20px auto 40px
+    box-shadow: rgba(0,0,0,.2) 0 0 20px
 
 .wsnw
     white-space: nowrap
 
-
+.form-callback
+    +mt(.25s)
+    max-width: 320px
+    margin: auto
+    box-shadow: rgba(0,0,0,.2) 0 0 20px
+    .contact-form-head 
+        h4
+            color: #fff
+    
 //.my-mfp-zoom-in Animation
 .my-mfp-zoom-in
-    .portfolio-popup
+    .portfolio-popup,
+    .form-callback
         opacity: 0
         transform: scale(0.8)
-    &.mfp-ready .portfolio-popup
+    &.mfp-ready .portfolio-popup,
+    &.mfp-ready .form-callback
         opacity: 1
         transform: scale(1)
-    &.mfp-removing .portfolio-popup
+    &.mfp-removing .portfolio-popup,
+    &.mfp-removing .form-callback
         transform: scale(0.8)
         opacity: 0
     &.mfp-bg

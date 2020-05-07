@@ -885,25 +885,43 @@ body textarea:required:valid {
   display: block;
   width: 90%;
   margin: 20px auto 40px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 0 20px;
+          box-shadow: rgba(0, 0, 0, 0.2) 0 0 20px;
 }
 
 .wsnw {
   white-space: nowrap;
 }
 
-.my-mfp-zoom-in .portfolio-popup {
+.form-callback {
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  max-width: 320px;
+  margin: auto;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 0 20px;
+          box-shadow: rgba(0, 0, 0, 0.2) 0 0 20px;
+}
+
+.form-callback .contact-form-head h4 {
+  color: #fff;
+}
+
+.my-mfp-zoom-in .portfolio-popup,
+.my-mfp-zoom-in .form-callback {
   opacity: 0;
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
 }
 
-.my-mfp-zoom-in.mfp-ready .portfolio-popup {
+.my-mfp-zoom-in.mfp-ready .portfolio-popup,
+.my-mfp-zoom-in.mfp-ready .form-callback {
   opacity: 1;
   -webkit-transform: scale(1);
           transform: scale(1);
 }
 
-.my-mfp-zoom-in.mfp-removing .portfolio-popup {
+.my-mfp-zoom-in.mfp-removing .portfolio-popup,
+.my-mfp-zoom-in.mfp-removing .form-callback {
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
   opacity: 0;
