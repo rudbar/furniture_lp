@@ -84,6 +84,13 @@ $(document).ready(function() {
 		type: 'inline',
 	});
 
+	$("a[href='#callback']").click(function() {
+		var dataForm = $(this).data("form");
+		var dataText = $(this).data("text");
+		$(".form-callback h4").text(dataText);
+		$(".form-callback [name=admin-data]").val(dataText);
+	});
+
     $(".mfp-gallery").magnificPopup({
 		type: 'image',
 		closeOnContentClick: true,

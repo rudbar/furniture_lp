@@ -795,7 +795,10 @@
 
                 <div class="col-sm-10 col-sm-offset-1">
                     <p class="tizer-text">Клиентам, обратившимся в нашу компанию до конца мая 2020 года, мы предоставляем <strong>скидку до 20%</strong>.</p>
-                    <a href="#callback" class="button" data-form="Скидки клиентам">Отправить заявку</a>
+                    <a href="#callback" class="button" 
+                    data-form="Скидки клиентам"
+                    data-text="Отправить заявку"
+                    >Отправить заявку</a>
                 </div>
 
             </div>
@@ -1036,7 +1039,7 @@
 
                                     <label>
                                         <span>Ваш телефон:</span>
-                                        <input type="text" name="Имя" placeholder="Ваш телефон..." required>
+                                        <input type="text" name="Телефон" placeholder="Ваш телефон..." required>
                                     </label>
 
                                     <label>
@@ -1083,7 +1086,10 @@
                         <div class="phone-wrap">
                             <i class="fa fa-mobile"></i> +7 (365) 55-55-55
                         </div>
-                        <a href="#callback" class="callback" data-form="Заказать обратный звонок: Футер">Заказать обратный звонок</a>
+                        <a href="#callback" class="callback" 
+                        data-form="Заказать обратный звонок: Футер"
+                        data-text="Заказать звонок"
+                        >Заказать обратный звонок</a>
                     </div>
 
                     <a href="" class="toggle-mnu hidden-lg"><span></span></a>
@@ -1130,6 +1136,8 @@
 
         <form id="callback" class="contact-form form-callback">
 
+                <input type="hidden" name="admin-data">
+
                 <div class="contact-form-head">
                     <h4>Оставить заявку</h4>
                     <p>Оставьте заявку и мы свяжемся с вами в течение 20 минут.</p>
@@ -1142,7 +1150,7 @@
 
                 <label>
                     <span>Ваш телефон:</span>
-                    <input type="text" name="Имя" placeholder="Ваш телефон..." required>
+                    <input type="text" name="Телефон" placeholder="Ваш телефон..." required>
                 </label>
 
                 <div class="text-center">
