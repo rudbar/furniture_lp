@@ -195,10 +195,10 @@ $(document).ready(function() {
 			url: "/mail.php", //Change
 			data: th.serialize()
 		}).done(function() {
-			th.find(".success").addClass("active");
+			$(".form-callback .success").addClass("active");
 			setTimeout(function() {
 				// Done Functions
-				th.find(".success").removeClass("active");
+				$(".form-callback .success").removeClass("active");
 				th.trigger("reset");
 				$.magnificPopup.close();
 			}, 3000);

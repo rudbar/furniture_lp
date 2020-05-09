@@ -900,6 +900,19 @@ body textarea:required:valid {
   margin: auto;
   -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 0 20px;
           box-shadow: rgba(0, 0, 0, 0.2) 0 0 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.form-callback .mfp-close {
+  color: #fff;
+  opacity: .3;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.form-callback .mfp-close:hover {
+  opacity: .6;
 }
 
 .form-callback .contact-form-head h4 {
@@ -1369,6 +1382,35 @@ form label .selectize-dropdown .active {
 
 .main-foot .phone .phone-wrap {
   color: #acb6be;
+}
+
+.success {
+  color: #fff;
+  background-color: #414E5B;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: -100%;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.success p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+}
+
+.success.active {
+  top: 0;
+  opacity: 1;
 }
 
 @font-face {

@@ -204,6 +204,14 @@ body textarea:required:valid
     max-width: 320px
     margin: auto
     box-shadow: rgba(0,0,0,.2) 0 0 20px
+    position: relative
+    overflow: hidden
+    .mfp-close
+        color: #fff
+        opacity: .3
+        +mt(.25s)
+        &:hover
+            opacity: .6
     .contact-form-head 
         h4
             color: #fff
@@ -524,3 +532,22 @@ form
     .phone 
         .phone-wrap
             color: #acb6be
+
+.success
+    color: #fff
+    background-color: $blue
+    position: absolute
+    z-index: 1
+    left: 0
+    width: 100%
+    height: 100%
+    display: flex
+    top: -100%
+    opacity: 0
+    +mt(.5s)
+    p
+        display: flex
+        margin: auto
+    &.active
+        top: 0
+        opacity: 1
