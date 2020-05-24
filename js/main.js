@@ -156,6 +156,10 @@ $(document).ready(function() {
 		$("html, body").animate({scrollTop: $(document).height() + 200}, "slow");
 		return false;
 	});
+
+	$("body").on("click", ".top", function() {
+		$("html, body").animate({scrollTop: 0}, "slow");
+	});
     
     //Replace all SVG images with inline SVG
 	$('img.img-svg').each(function(){
@@ -204,6 +208,16 @@ $(document).ready(function() {
 			}, 3000);
 		});
 		return false;
+	});
+
+	$("body").append('<div class="top"><i class="fa fa-angle-double-up">');
+
+	$(window).scroll(function() {
+		if($(this).scrollTop() > $(this).height()) {
+			$(".top").addClass("active");
+		} else {
+			$(".top").removeClass("active");
+		}
 	});
     
 });
